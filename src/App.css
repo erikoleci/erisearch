@@ -47,3 +47,27 @@ input:focus {
   margin-left: 100px;
 }
 
+
+
+.button-container {
+  display: flex;
+  margin-top: 20px;
+  margin-left: 100px;
+}
+
+
+.button-return {
+  margin-left: 10px; 
+  background-color: #ff5733; 
+  color: #fff; 
+  padding: 10px 15px; 
+  border: none; 
+  border-radius: 5px; 
+  cursor: pointer; 
+  outline: none; 
+  transition: background-color 0.3s ease; 
+}
+
+.button-return:hover {
+  background-color: #cc4c1c; 
+}

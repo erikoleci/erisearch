@@ -9,7 +9,7 @@ function App() {
     setSearchItem(searchTerm);
   };
 
-  const buttonLabels = ['search', 'search', 'search'];
+
 
   return (
     <div className="container">

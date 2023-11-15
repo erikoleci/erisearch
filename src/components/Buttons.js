@@ -1,21 +1,28 @@
 import React from 'react';
 import "./Buttons.css"
 
-const Buttons = ({ onButtonClick }) => {
-  const handleClick = (action) => {
-    onButtonClick(action);
+const Buttons = ({ onButtonClick, onReturnButtonClick }) => {
+  const buttonsData = [
+    { name: 'Instagram', client: 'Vodafone' },
+    { name: 'Netflix', client: 'Netflix' },
+    { name: 'AirBnB', client: 'Airbnb' },
+    { name: 'Vodaphone', client: 'Vodafone' },
+    { name: 'Google', client: 'Google' },
+  ];
+
+  const handleClick = (buttonData) => {
+    onButtonClick(buttonData.client);
   };
 
   return (
     <div className="button-container">
-      <button className="button" onClick={() => handleClick('Button 1')}>
-        Button 1
-      </button>
-      <button className="button" onClick={() => handleClick('Button 2')}>
-        Button 2
-      </button>
-      <button className="button" onClick={() => handleClick('Button 3')}>
-        Button 3
+      {buttonsData.map((button, index) => (
+        <button key={index} className="button" onClick={() => handleClick(button)}>
+          {button.name}
+        </button>
+      ))}
+      <button className="button-return" onClick={() => onReturnButtonClick()}>
+        Return
       </button>
     </div>
   );
