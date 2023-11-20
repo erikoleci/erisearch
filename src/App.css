@@ -1,5 +1,13 @@
-.App {
+
+body, html {
+  margin: 0;
+  padding: 0;
   font-family: Arial, sans-serif;
+  background-color: #f5f5f5;
+}
+
+
+.App {
   margin: 20px;
 }
 
@@ -10,9 +18,10 @@
   align-items: center;
 }
 
+
 input {
-  padding: 10px;
-  border: none;
+  padding: 12px;
+  border: 1px solid #ddd;
   border-radius: 5px;
   outline: none;
   font-size: 16px;
@@ -28,26 +37,9 @@ input::placeholder {
 input:hover,
 input:focus {
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-}
-
-
-input {
-  transition: box-shadow 0.3s ease, transform 0.3s ease;
-}
-
-input:hover,
-input:focus {
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
   transform: scale(1.02);
 }
 
-.button-container {
-  display: flex;
-  margin-top: 20px;
-  margin-left: 100px;
-}
-
-
 
 .button-container {
   display: flex;
@@ -55,6 +47,23 @@ input:focus {
   margin-left: 100px;
 }
 
+
+.button {
+  padding: 12px 24px;
+  margin: 0 10px;
+  border: none;
+  border-radius: 5px;
+  background-color: #4285f4;
+  color: #fff;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.button:hover {
+  background-color: #2c75e0;
+  transform: scale(1.02);
+}
 
 .button-return {
   margin-left: 10px; 

@@ -3,10 +3,10 @@ import "./Buttons.css"
 
 const Buttons = ({ onButtonClick, onReturnButtonClick }) => {
   const buttonsData = [
-    { name: 'Instagram', client: 'Vodafone' },
+    { name: 'Amazon', client: 'Amazon' },
     { name: 'Netflix', client: 'Netflix' },
     { name: 'AirBnB', client: 'Airbnb' },
-    { name: 'Vodaphone', client: 'Vodafone' },
+    { name: 'Vodafone', client: 'Vodafone' },
     { name: 'Google', client: 'Google' },
   ];
 

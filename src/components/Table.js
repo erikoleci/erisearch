@@ -40,6 +40,7 @@ function Table() {
     <div className="App">
       <SearchFilter onSearch={handleSearch} />
       <Buttons onButtonClick={handleButtonClick} onReturnButtonClick={handleReturnButtonClick} />
+      <div className="table-container">
       <table>
         <thead>
           <tr>
@@ -60,6 +61,7 @@ function Table() {
           ))}
         </tbody>
       </table>
+      </div>
     </div>
   );
 }
