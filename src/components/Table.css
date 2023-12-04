@@ -3,7 +3,7 @@
   gap: 20px;
   grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
   width: 80%;
-  margin: 20px auto; /* Adjusted margin for better centering */
+  margin: 20px auto; 
 }
 
 .card {
@@ -14,7 +14,7 @@
   transition: box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px; /* Added margin-bottom for spacing between cards */
+  margin-bottom: 20px; 
   padding: 20px;
 }
 
@@ -33,16 +33,16 @@
 
 .client {
   color: #0f9d58;
-  font-style: italic; /* Make Client text italic */
+  font-style: italic; 
 }
 
 .props {
   color: #db4437;
-  text-transform: uppercase; /* Make Props text uppercase */
+  text-transform: uppercase; 
 }
 
 .tags {
   color: #f4b400;
-  font-weight: bold; /* Make Tags text bold */
+  font-weight: bold; 
 }
 
