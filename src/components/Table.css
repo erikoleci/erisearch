@@ -1,21 +1,22 @@
 .table-container {
   display: grid;
   gap: 20px;
-  grid-template-columns: repeat(auto-fill, minmax(160px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
   width: 80%;
-  margin: 20px auto; /* Adjusted margin for better centering */
+  margin: 20px auto;
 }
 
 .card {
   border: 1px solid #ddd;
-  border-radius: 8px;
+  border-radius: 12px;
   overflow: hidden;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
   transition: box-shadow 0.3s ease;
   display: flex;
   flex-direction: column;
-  margin-bottom: 20px; /* Added margin-bottom for spacing between cards */
-  padding: 20px;
+  margin-bottom: 20px;
+  padding: 5px;
+  background-color: #fff;
 }
 
 .card:hover {
@@ -24,25 +25,19 @@
 
 .card p {
   margin: 8px 0;
-  font-size: 16px;
+  font-size: 14px;
+  line-height: 1.4;
 }
 
 .name {
-  color: #1a73e8;
+  color: #333;
+  font-weight: bold;
+  font-size: 16px;
+  margin-bottom: 4px;
 }
 
-.client {
-  color: #0f9d58;
-  font-style: italic; /* Make Client text italic */
-}
-
-.props {
-  color: #db4437;
-  text-transform: uppercase; /* Make Props text uppercase */
-}
-
+.client,
+.props,
 .tags {
-  color: #f4b400;
-  font-weight: bold; /* Make Tags text bold */
+  color: #555;
 }
-
